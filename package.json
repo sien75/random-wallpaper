@@ -1,0 +1,59 @@
+{
+  "name": "random-wallpaper",
+  "productName": "random-wallpaper",
+  "version": "1.0.0",
+  "description": "Ramdomly get image and change wallpaper",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "repository": "https://github.com/sien75/random-wallpaper",
+  "keywords": [
+    "Wallpaper",
+    "Electron",
+    "Image"
+  ],
+  "author": "sien75",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "random-wallpaper"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-zip"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "wallpaper": "4.4.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.46",
+    "@electron-forge/maker-deb": "^6.0.0-beta.46",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.46",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.46",
+    "@electron-forge/maker-zip": "^6.0.0-beta.46",
+    "electron": "^7.1.3"
+  }
+}
