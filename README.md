@@ -24,6 +24,5 @@ npm run make
 The web pages show by electron built-in chromium browser is built by Vue.
 I put the build result in the "dist" folder.
 This is what I call "client part".
-If you are interested in "client part", go to my [rw-client repository](https://github.com/sien75/rw-client).
 ## Related
 [wallpaper](https://github.com/sindresorhus/wallpaper) - a tool to manage the desktop wallpaper
